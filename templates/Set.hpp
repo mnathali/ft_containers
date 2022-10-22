@@ -6,7 +6,7 @@
 /*   By: mnathali <mnathali@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 11:24:59 by mnathali          #+#    #+#             */
-/*   Updated: 2022/10/22 12:38:39 by mnathali         ###   ########.fr       */
+/*   Updated: 2022/10/22 12:45:38 by mnathali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,21 +32,21 @@ class set
 
 	public:
 	
-	typedef	Key																		key_type;
-	typedef Key																		value_type;
-	typedef std::size_t																size_type;
-	typedef std::ptrdiff_t															difference_type;
-	typedef Compare																	key_compare;
-	typedef Compare																	value_compare;
-	typedef Allocator																allocator_type;
-	typedef value_type&																reference;
-	typedef const value_type&														const_reference;
-	typedef typename Allocator::pointer												pointer;
-	typedef typename Allocator::const_pointer										const_pointer;
-	typedef BDIterator<pair<pair<Key*, bool>, pair<void*, pair<void*, void*> > > >		iterator;
+	typedef	Key																				key_type;
+	typedef Key																				value_type;
+	typedef std::size_t																		size_type;
+	typedef std::ptrdiff_t																	difference_type;
+	typedef Compare																			key_compare;
+	typedef Compare																			value_compare;
+	typedef Allocator																		allocator_type;
+	typedef value_type&																		reference;
+	typedef const value_type&																const_reference;
+	typedef typename Allocator::pointer														pointer;
+	typedef typename Allocator::const_pointer												const_pointer;
+	typedef BDIterator<pair<pair<Key*, bool>, pair<void*, pair<void*, void*> > > >			iterator;
 	typedef BDIterator<pair<pair<const Key*, bool>, pair<void*, pair<void*, void*> > > >	const_iterator;
-	typedef ft::reverse_iterator<iterator>											reverse_iterator;
-	typedef ft::reverse_iterator<const_iterator>									const_reverse_iterator;
+	typedef ft::reverse_iterator<iterator>													reverse_iterator;
+	typedef ft::reverse_iterator<const_iterator>											const_reverse_iterator;
 
 	set() : size_(0)
 	{
